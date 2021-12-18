@@ -1,0 +1,105 @@
+﻿@page
+@model project_sem.Pages.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTRlife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" />
+   @{ 
+       Layout = null;
+   }
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+                <a href="Index">
+                    <img src="~/images/img1/Subtract.png" alt="Extr" class="logo">
+                </a>
+                <ul class="menu">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-page="/bmx">Bmx</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-page="/Skateboarding">Skateboarding</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-page="/Snowboarding">Snowboarding</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Surfing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/profile">profile</a>
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="offer">
+                <p>EXTREME</p>
+                <h1>
+                    IS LIFE
+                </h1>
+                <li class="nav-item">
+                    <a class="btn"  asp-area="" asp-page="/News">NEWS</a>
+                </li>
+               
+            </div>
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>WHY?</h2>
+            <div class="description">
+                <div class="desc-left">
+                    <h3>Зачем люди этим занимаются?</h3>
+                    <p>
+                        Во время занятий экстремальными видами спорта вы будете получать постоянный заряд положительных эмоций. Проблемы уйдут на второй план, когда вы будете мчаться на огромной скорости со склона.
+
+                        Экстрим — это не про монотонно повторяющиеся упражнения, там вас всегда будут ждать новые впечатления, трассы, люди, локации. Ваши свершения будут сильно вдохновлять и радовать. Скилы, хоть и несущественные, позволят вам почувствовать эйфорию, ради которой и живут экстремальные спортсмены.
+
+
+                    </p>
+                </div>
+                <div class="desc-right">
+                    <h3>Есть ли риски?</h3>
+                    <p>
+                        В каждом спорте есть свои «зоны риска», от растяжения мышц до травм позвоночника. А в экстремальном спорте нередки смертельные исходы. Вовлечённые люди всё равно занимаются этим, потому что это доставляет им бурю эмоций. Главное ко всему подходить с умом.
+
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="gallery">
+                <img src="~/images/img1/bmx3.png" alt="Event photo 1">
+                <img src="~/images/img1/snow.png" alt="Event photo 2">
+                <img src="~/images/img1/skate2.jpg" alt="Event photo 3">
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p>
+                    ©2021 EXTRlife
+                </p>
+                <p>
+                    Лотфуллин Ильфат
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

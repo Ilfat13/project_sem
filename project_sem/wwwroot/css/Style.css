@@ -1,0 +1,272 @@
+﻿body {
+    font-family: Comic Sans MS;
+    background: rgb(223, 220, 181);
+}
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 58px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 113px
+}
+
+p {
+    margin: 0;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+   display:flex;
+   flex-direction:column;
+   align-content:space-between;
+   width:100%
+    
+}
+
+.header {
+    margin-right: 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /*    padding-top: 25px;
+    padding-bottom: 24px;
+    padding-left: 50px;*/
+}
+
+header a {
+    color: black;
+}
+
+.logo {
+    margin-right: 69px;
+}
+
+.menu {
+    display:flex;
+    
+}
+
+    .menu li a {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+
+        .menu li a:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+    .menu li {
+        margin-right: 40px;
+    }
+
+.tel {
+    font-size: 17px;
+    margin-left: 100px;
+    letter-spacing: 0.1em;
+}
+
+.nav {
+   
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width:100%;
+    border-radius: 40px/40px;
+}
+.offer {
+    text-transform: uppercase;
+    margin-top: 216px;
+}
+    h1 {
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+form {
+    margin: 20px auto;
+    background: rgb(223, 220, 181);
+    color: black;
+    width: 450px;
+    height: 270px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(black);
+}
+
+.group {
+    margin: 10px;
+    padding: 5px;
+}
+
+label {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+input {
+    font-family: Comic Sans MS;
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px/20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(black);
+}
+
+    input:focus {
+        border: 3px solid black;
+        transform: translateX(20px);
+        width: 380px;
+    }
+
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    color:  rgb(223, 220, 181);
+    background: black;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(black);
+    font-family: Comic Sans MS;
+}
+
+    button:hover {
+        opacity: .80;
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+.container1 {
+    height: 500px;
+    width: 750px;
+    margin-left: 40px;
+    outline: 4px solid black
+}
+
+.desc-rigth {
+    float: right;
+    margin-right: 40px;
+    height: 500px;
+    width: 600px;
+    margin-top: -547px;
+}
+
+.desc-left {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.desc-left2 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.desc-left3 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.desc-left4 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.regist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.exit{
+    margin-top: 20px;
+    margin-left:  1350px;
+}
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    font-size: 70px;
+}
+.newsimage {
+    width: 700px;
+    height: 500px;
+    margin-left: 40px;
+    outline: 4px solid black;
+}
+.desc-news {
+    float: right;
+    margin-right: 60px;
+    height: 500px;
+    width: 600px;
+    margin-top: -512px;
+}
+.newsimage1 {
+    width: 999px;
+    height: 500px;
+    margin-left: 40px;
+    margin-top: 20px;
+    outline: 4px solid black;
+}
+.desc-news1 {
+    margin-left: 40px;
+    margin-top: 120px;
+}
+.buttonprof {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    font-size: 70px;
+}
+.snowimage {
+    width: 1300px;
+    height: 600px;
+    margin-left: 40px;
+    margin-top: 20px;
+    outline: 7px solid black;
+}

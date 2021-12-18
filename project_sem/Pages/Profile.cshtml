@@ -1,0 +1,90 @@
+﻿@page
+@model project_sem.Pages.ProfileModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTRlife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="~/css/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="exit">
+        <button><a href="/Exit" style="text-decoration:none; color:rgb(223, 220, 181);">Выйти</a></button>
+    </div>
+    <div class="login">
+        @Model.user.username
+    </div>
+    @*<form id="registration-form" method="post">
+            <div class="group">
+                <label for="">Город:</label>
+                <input name="City" />
+            </div>
+
+            <div class="group">
+                <label for="">Увлечения:</label>
+                <input name="Description" />
+            </div>
+            <div class="group">
+                <center><button type="submit">Сохранить</button></center>
+            </div>
+
+        </form>*@
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <form class="d-flex justify-content-center" id="registration-form" method="post">
+              
+                <div>
+                    <div class="m-3 badge bg-primary fs-2 text-black-50 bg-white">
+                        @Model.profile.City
+                    </div>
+
+                    <div class="m-3 badge bg-primary fs-2 text-black-50 bg-white">
+                        @Model.profile.Description
+                    </div>
+                </div>
+                
+                    
+            </form>
+           
+
+
+
+            @*<div>@Model.profile.Description</div>
+        <div>@Model.profile.City</div>*@
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <form id="registration-form" method="post">
+                <div class="group">
+                    <label for="">Город:</label>
+                    <input name="City" />
+                </div>
+
+                <div class="group">
+                    <label for="">Увлечения:</label>
+                    <input name="Description" />
+                </div>
+                <div class="group">
+                    <center><button type="submit">Сохранить</button></center>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="bg-dark link-secondary nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Профиль</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="bg-dark link-secondary nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Редактирование</button>
+        </li>
+    </ul>
+        </div>
+</body>
+</html>
